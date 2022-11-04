@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "../../hooks/useAuth";
 
 const Layout = () => {
@@ -8,7 +8,6 @@ const Layout = () => {
 
     useEffect(() => {
         const token = localStorage.getItem("token");
-        console.log(token);
         if (token) {
             setAuth({ token });
             navigate("/", { replace: true });

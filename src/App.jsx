@@ -4,7 +4,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import { PrivateRoutes } from "./utils/PrivateRoutes";
 import Layout from "./components/Layout";
-import useFindToken from "./hooks/useFindToken";
 
 function App() {
     return (
